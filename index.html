@@ -56,13 +56,6 @@
       object-fit: cover;
     }
 
-        /* Sidebar */
-    <!-- .sidebar .photo{
-    width:140px;height:140px;border-radius:16px;overflow:hidden;margin-left:auto;margin-right:auto;background:#f0f0f0;display:flex;align-items:center;justify-content:center
-    }
-    .sidebar .photo img{
-    width:100%;height:100%;object-fit:cover;display:block;
-    } -->
     .name{font-size:20px;font-weight:800;margin-top:14px;text-align:center}
     .title{font-size:13px;color:var(--muted);text-align:center;margin-top:6px}
 
@@ -111,7 +104,6 @@
 <body>
   <main class="container" role="main">
 
-    <!-- Sidebar -->
     <aside class="panel sidebar" aria-label="معلومات شخصية">
       <div style="display:flex;flex-direction:column;align-items:stretch">
         <div class="photo" aria-hidden="true"><img class="img-me" src="1692242720424.jpg" alt=""></div>
@@ -158,14 +150,22 @@
 
         <div>
           <div class="section-title"><h3>الشهادات</h3></div>
-          <div class="muted">شهادة من Cisco Academy</div>
+          <div style="margin-bottom:12px;">
+            <strong>CCNA: Introduction to Networks</strong>
+            <div class="muted">Kerbala University Local Academy & Cisco Networking Academy</div>
+            <div class="muted" style="font-size:11px;">تاريخ الإصدار: 04 Jun 2025</div>
+          </div>
+          <div style="margin-bottom:12px;">
+            <strong>CCNA: Introduction to Networks (Credential)</strong>
+            <div class="muted">Cisco Networking Academy</div>
+            <div class="muted" style="font-size:11px;">تاريخ الإصدار: Jun 04, 2025</div>
+          </div>
           <div class="muted" style="margin-top:6px">شهادة من Webe</div>
         </div>
 
       </div>
     </aside>
 
-    <!-- Main -->
     <section class="panel main" aria-label="المحتوى الرئيسي">
       <header>
         <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
