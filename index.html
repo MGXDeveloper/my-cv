@@ -65,8 +65,11 @@
     .contact svg{width:18px;height:18px;opacity:0.9}
     .section-title{display:flex;align-items:center;justify-content:space-between;margin-top:18px;margin-bottom:10px}
     .section-title h3{margin:0;font-size:13px;color:var(--accent)}
-    .skills{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-    .skill-pill{background:var(--glass);padding:8px;border-radius:8px;font-size:13px}
+    .skills{display:grid;grid-template-columns:1fr;gap:8px}
+    .skill-category{margin-bottom:6px;}
+    .skill-category-title{font-size:12px;font-weight:700;color:var(--muted);margin-bottom:4px;}
+    .skill-pills{display:flex;flex-wrap:wrap;gap:6px;}
+    .skill-pill{background:var(--glass);padding:6px 10px;border-radius:8px;font-size:12px;font-weight:600;}
 
     /* Main content */
     .summary{font-size:14px;line-height:1.6;color:#0f1724}
@@ -77,7 +80,7 @@
     .experience-item h4{margin:0;font-size:15px}
     .meta{font-size:13px;color:var(--muted);margin-top:6px}
     .projects-list{list-style:none;padding:0;margin:0}
-    .projects-list li{padding:10px;border-radius:10px;background:var(--glass);margin-bottom:8px}
+    .projects-list li{padding:14px;border-radius:10px;background:var(--glass);margin-bottom:10px}
 
     /* Footer & print */
     .footer{margin-top:20px;text-align:center;font-size:13px;color:var(--muted)}
@@ -108,7 +111,7 @@
       <div style="display:flex;flex-direction:column;align-items:stretch">
         <div class="photo" aria-hidden="true"><img class="img-me" src="1692242720424.jpg" alt=""></div>
         <div class="name">مهيمن عامر عبد الحسين</div>
-        <div class="title">خريج بكالوريوس علوم الحاسوب — مطور برمجيات</div>
+        <div class="title">خريج بكالوريوس علوم الحاسوب — مطور برمجيات Full-Stack</div>
 
         <div class="divider"></div>
 
@@ -120,7 +123,7 @@
 
           <a class="contact-item" href="https://github.com/MGXDeveloper" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2C8.1 2 5 5.1 5 9c0 3.9 2.6 6.2 5 6.8.4.1.5-.2.5-.4v-1.4c-2 .4-2.5-.9-2.5-.9-.3-.8-.8-1-1-1-.8-.6 0-.6 0-.6.9.1 1.4.9 1.4.9.8 1.4 2 1 2.5.8.1-.6.3-1 .6-1.2-1.6-.2-3.3-.8-3.3-3.6 0-.8.3-1.4.8-2-.1-.2-.4-1 .1-2.1 0 0 .6-.2 2 .8.6-.2 1.2-.3 1.8-.3s1.2.1 1.8.3c1.4-1 2-.8 2-.8.5 1.1.2 1.9.1 2.1.5.6.8 1.2.8 2 0 2.8-1.7 3.4-3.3 3.6.3.2.6.7.6 1.4v2.1c0 .2.1.5.5.4 2.4-.6 5-2.9 5-6.8 0-3.9-3.1-7-7-7z" stroke="currentColor" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><div style="font-weight:700">GitHub</div><div class="muted">github.com/MGXDeveloper</div></div></a>
 
-          <a class="contact-item" href="https://www.linkedin.com/in/%D9%85%D9%87%D9%8A%D9%85%D9%86-%D8%B9%D8%A7%D9%85%D8%B1-727516288/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M7 10v7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M7 7v.01" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M12 10v7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M12 7a2 2 0 1 1 0 0" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg><div><div style="font-weight:700">LinkedIn</div><div class="muted">ملف احترافي</div></div></a>
+          <a class="contact-item" href="https://www.linkedin.com/in/%D9%85%D9%87%D9%8A%D9%8من-%D8%B9%D8%A7%D9%85%D8%B1-727516288/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M7 10v7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M7 7v.01" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M12 10v7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M12 7a2 2 0 1 1 0 0" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg><div><div style="font-weight:700">LinkedIn</div><div class="muted">ملف احترافي</div></div></a>
         </div>
 
         <div class="divider"></div>
@@ -128,13 +131,45 @@
         <div>
           <div class="section-title"><h3>المهارات التقنية</h3></div>
           <div class="skills">
-            <div class="skill-pill">C, C++, C#</div>
-            <div class="skill-pill">Python, PHP, JavaScript</div>
-            <div class="skill-pill">HTML, CSS</div>
-            <div class="skill-pill">Laravel</div>
-            <div class="skill-pill">Database(SQL) : SQL Server, MySQL, SQLite</div>
-            <div class="skill-pill">Data Structure</div>
-            <div class="skill-pill">Git, GitHub, OpenCV</div>
+            <div class="skill-category">
+              <div class="skill-category-title">بيئة ولغات .NET:</div>
+              <div class="skill-pills">
+                <div class="skill-pill">C#</div>
+                <div class="skill-pill">ASP.NET Core MVC</div>
+                <div class="skill-pill">Web API / REST APIs</div>
+                <div class="skill-pill">EF Core</div>
+                <div class="skill-pill">Identity & JWT</div>
+                <div class="skill-pill">DTOs Pattern</div>
+              </div>
+            </div>
+            
+            <div class="skill-category">
+              <div class="skill-category-title">لغات وأطر عمل أخرى:</div>
+              <div class="skill-pills">
+                <div class="skill-pill">C, C++</div>
+                <div class="skill-pill">Python, PHP, JavaScript</div>
+                <div class="skill-pill">Laravel</div>
+                <div class="skill-pill">HTML, CSS</div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <div class="skill-category-title">قواعد البيانات (SQL):</div>
+              <div class="skill-pills">
+                <div class="skill-pill">SQL Server</div>
+                <div class="skill-pill">MySQL</div>
+                <div class="skill-pill">SQLite</div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <div class="skill-category-title">أدوات ومفاهيم:</div>
+              <div class="skill-pills">
+                <div class="skill-pill">Data Structures</div>
+                <div class="skill-pill">Git & GitHub</div>
+                <div class="skill-pill">OpenCV</div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -189,12 +224,19 @@
 
       <div style="margin-top:18px">
         <div class="section-title"><h3>الملخص المهني</h3></div>
-        <p class="summary">خريج <strong>علوم الحاسوب</strong> من جامعة كربلاء، أتمتع بخبرة عملية في تطوير البرمجيات باستخدام لغات مثل C, C++, C#, Python, PHP, JavaScript، مع إتقان لقواعد البيانات (SQL Server, MySQL, SQLite) وأدوات التحكم بالإصدارات مثل Git. عملت على مشاريع متنوعة تشمل تطبيقات سطح المكتب والويب مثل <strong>الأرشفة الذكية</strong> و <strong>محاكي الرحلات الجوية</strong>. أسعى لتطوير خبرتي في مجالات البرمجة التنافسية، الذكاء الاصطناعي، والمساهمة في المشاريع مفتوحة المصدر.</p>
+        <p class="summary">خريج <strong>علوم الحاسوب</strong> من جامعة كربلاء، أتمتع بخبرة عملية قوية في تطوير تطبيقات الويب وسطح المكتب Full-Stack. متخصص في بناء الأنظمة الخلفية (Backend) السحابية والمستقرة باستخدام تقنيات <strong>.NET (ASP.NET Core, Web API, MVC)</strong> والتحكم بقواعد البيانات المتقدمة مثل <strong>SQL Server</strong>، بالإضافة إلى خبرة إضافية في PHP (Laravel) وPython. أمتلك شغفاً بالبرمجة التنافسية، هندسة البرمجيات النظيفة، وحماية البيانات الرقمية.</p>
       </div>
 
       <div style="margin-top:18px">
         <div class="section-title"><h3>المشاريع الرئيسية</h3></div>
         <ul class="projects-list" aria-label="قائمة المشاريع">
+          
+          <li>
+            <strong>نظام إدارة المهام والمستخدمين (RESTful API Project)</strong>
+            <div class="meta">C#, ASP.NET Core, Web API, Entity Framework Core (EF Core), SQL Server</div>
+            <div style="margin-top:8px;color:#0f1724">تطوير واجهة برمجية (Backend API) متكاملة تتبع معايير REST Architecture. تم بناء نظام الصلاحيات والمصادقة الآمنة بالاعتماد على <strong>Identity System & JWT Tokens</strong>، وتوظيف نمط الـ <strong>DTOs (Data Transfer Objects)</strong> لتأمين البيانات المتبادلة وتحسين الأداء وربط النظام بقاعدة بيانات SQL Server.</div>
+          </li>
+
           <li>
             <strong>تطبيق الأرشفة الذكية</strong>
             <div class="meta">PHP, Laravel, MySQL, HTML, CSS, JavaScript</div>
@@ -208,15 +250,9 @@
           </li>
 
           <li>
-            <strong>برنامج الحوافز</strong>
+            <strong>برنامج الحوافز والمكافآت</strong>
             <div class="meta">C#, Windows Forms, SQL Server</div>
             <div style="margin-top:8px;color:#0f1724">بناء نظام لإدارة الحوافز والمكافآت للموظفين مع تقارير ومتابعة الأداء.</div>
-          </li>
-
-          <li>
-            <strong>تطبيقات ويب صغيرة</strong>
-            <div class="meta">PHP, Laravel, Vue.js, MySQL</div>
-            <div style="margin-top:8px;color:#0f1724">تطوير مواقع وتطبيقات ويب بمزايا مختلفة لأغراض تجريبية ومشاريع عملاء صغار.</div>
           </li>
         </ul>
       </div>
@@ -225,7 +261,7 @@
         <div class="section-title"><h3>التعليم</h3></div>
         <div class="experience-item">
           <h4>بكالوريوس علوم الحاسوب — جامعة كربلاء</h4>
-          <div class="meta">كلية علوم الحاسوب وتكنولوجيا المعلومات </div>
+          <div class="meta">كلية علوم الحاسوب وتكنولوجيا المعلومات (خريج 2025)</div>
         </div>
       </div>
 
